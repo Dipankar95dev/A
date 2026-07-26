@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Credits Scroll</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.credits{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    animation:scrollUp 25s linear infinite;
+}
+
+.credits h1{
+    font-size:60px;
+    color:#FFD700;
+    margin-bottom:30px;
+}
+
+.credits h2{
+    font-size:40px;
+    margin-top:40px;
+    color:#00E5FF;
+}
+
+.credits p{
+    font-size:28px;
+    margin:12px 0;
+}
+
+@keyframes scrollUp{
+    from{
+        transform:translateY(70%);
+    }
+    to{
+        transform:translateY(-200%);
+    }
+}
+</style>
+
 </head>
 <body>
-    <table border="2" style="width: 100%; height: 100%; text-align: center; border:collapse;">
 
-          <h2>welcome to profile</h2>
-          
-    </table>
+<div class="container">
+    <div class="credits">
+
+        <h1>🎬 THE END 🎬</h1>
+
+        <h2>Presented By</h2>
+        <p>Chaman sir</p>
+
+        <h2>Director</h2>
+        <p>Mr Dipankar </p>
+
+        <h2>Editor</h2>
+        <p>Dipankar Das</p>
+
+        <h2>Special Thanks</h2>
+        <p>Friends</p>
+        <p>Family</p>
+        <p>Subscribers ❤️</p>
+
+        <h2>Follow Me</h2>
+        <p>luxe.xrose</p>
+
+        <h1>Thank You ❤️</h1>
+    </div>
+</div>
+
 </body>
 </html>
