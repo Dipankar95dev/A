@@ -1,15 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sammi Meri Waar 🎵</title>
+ 
+ <style>
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding:18px;
+    background:rgba(181, 122, 122, 0.75);
+    z-index:10;
+    backdrop-filter:blur(8px);
+}
+
+.header h1{
+    margin:0;
+    font-size:25px;
+    color:#fff;
+}
+
+.header p{
+    margin:6px 0 0;
+    color:#aaa;
+    font-size:13px;
+}
+
+/* SCROLL AREA */
+.scroll-area{
+    position:absolute;
+    top:80px;
+    bottom:0;
+    width:100%;
+    overflow:hidden;
+}
+
+/* LYRICS */
+.lyrics{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+
+    animation:scrollLyrics 55s linear infinite;
+}
+
+.lyrics h2{
+    font-size:30px;
+    color:#00ffd5;
+    margin:40px 0;
+}
+
+.lyrics p{
+    font-size:25px;
+    line-height:2;
+    margin:35px 0;
+    font-weight:bold;
+    text-shadow:0 0 12px rgba(0,255,213,.35);
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollLyrics{
+
+    from{
+        transform:translateY(35px);
+    }
+
+    to{
+        transform:translateY(-250%);
+    }
+
+}
+
+/* PLAYER */
+.player{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    width:300px;
+    height:170px;
+
+    border-radius:15px;
+    overflow:hidden;
+
+    border:1px solid #519e76;
+    background:#e46565;
+
+    z-index:20;
+}
+
+.player iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+
+</style>
 </head>
+
 <body>
-    <div>
-        <h1>
-            Hello World
-        </h1>
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <h1>🎵 Sammi Meri Waar</h1>
+
+    <p>🎧 Music • Lyrics • Vibes</p>
+
+</div>
+
+
+<!-- SCROLLING LYRICS -->
+
+<div class="scroll-area">
+
+    <div class="lyrics">
+
+        <h2>🎵 SAMMI MERI WAAR 🎵</h2>
+
+        <!--
+        YAHAN APNE LYRICS PASTE KARNA
+        -->
+
+        <p>
+            [Raatan lamiyan kaliyan nri samiyrh]
+        </p>
+
+        <p>
+            [Kariya umraan waliya nei samiyeh]
+        </p>
+
+        <p>
+            [Sammi meri waar mei waari]
+        </p>
+
+        <p>
+            [Mein wari an nei samiyeh]
+        </p>
+
+        <p>
+            [Pehi pehli waar dil haari]
+        </p>
+
+        <p>
+            [Dil haari an nei samiyeh]
+        </p>
+
+        <h2>🎧 THE END 🎧</h2>
+
     </div>
+
+</div>
+
 </body>
 </html>
