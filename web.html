@@ -4,9 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form page </title>
+
+    <style>
+        body {
+            margin: 0%;
+            font-family: Arial, sans-serif;
+            background: #a8c40ef8;
+            color: #222;
+        }
+
+        header{
+            justify-content: center;
+            background: #2d68a3;
+            color: #d344d8;
+            align-items: center;
+            display: flex;
+        }
+
+        /* nav{
+            background: #111827;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a{
+            color: rgb(220, 84, 193);
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        } */
+
+        .hero{
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1{
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 18px;
+            color: #555555;
+
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563ed;
+            color: rgb(178, 220, 61);
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+
+        .card {
+            background: rgb(10, 204, 201);
+            width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer{
+            background-color: #111827;
+            color: rgb(140, 114, 232);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .h{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 10px;
+            background-color: aqua;
+           
+
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            /* width: 300px;  */
+            gap: 10px;
+            text-decoration: none;
+            text-decoration-color: none;
+
+        }
+
+        .header a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+    </style>
 </head>
-<body background="1.png">
+<body >
+
+    <header>
+      
+      <h1> Welcome to my website</h1>
+    </header>
     
-    <h1>hello word</h1>
+    <nav class="h">
+        <div class="header">
+        <a href="form.html"target="_blank">Home</a>
+        <a href="form1.html"target="_blank">About</a>
+        <a href="form2.html"target="_blank">Services</a>
+        <a href="1.png"target="_blank">Contact</a>
+        </div>
+    </nav>
+     
+    <section class="cards">
+      <h2> Welcome</h2>
+      <p>ye meri fiest html website hai</p>
+      <a href="#" class="btn">get started</a>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h2>html</h2>
+            <p>website ka structure banane ke liye html use hota he </p>
+
+        </div>
+        <div class="card">
+            <h1>css</h1>
+            <p>website ko beautiful nanane ke liye css use hota he</p>
+
+        </div>
+        <div class="card">
+            <h2>javascript</h2>
+            <p>website mein interaction aur functionality ke liye javascript use hota hai</p>
+
+        </div>
+    </section>
+
+    <section id="Home">
+        ...
+    </section>
+     
 </body>
 </html>
