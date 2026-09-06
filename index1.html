@@ -1,80 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wikipedia</title>
+    <title>Document</title>
     <style>
-        body {
-            background-color: antiquewhite;
-        }
+      .main{
+        margin: 0;
+        padding: 0 50px;
+      }
+      .header{
+        display: flex;
+        justify-content:space-between;
+        padding: 0 40px; 
+      }
+      .icon-name{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      }
+
+      #brand-name{
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+      }
+
+      #brand-tagline{
+        display: flex;
+        font-size: xx-small;
+      }
+
+      .search-bar{
+        display: flex;
+        margin: 10px 0;
+        padding: 0px 0;
+      }
+
+      .search-bar-border-1{
+        border: 1px solid gray;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .search-bar-border-2{
+        border: 1px solid gray;
+        border-radius: 0 3px 3px 0;
+      }
+
+      .content-area{
+        display: flex;
+        gap: 20px;
+        width: 90vw;
+      }
+
+      .sidebar{
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+      }
+
+      .menu{
+        width: 10vw;
+      }
+
+      .menu-items{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+      }
+      
+      .content{
+        display: flex;
+        gap: 10px;
+      }
 
 
-
-        .h {
-            color: black;
-            justify-self: left;
-        }
-
-        .tab {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-        .tab1{
-            justify-content: left;
-            display: flex;
-        }
-        .header{
-          display: flex;  
-          align-items: flex-end ;
-          justify-content: space-between;
-          gap: 10px;
-          padding: 25px;
-            text-decoration: none;
-            text-decoration-color: none ;
-        }
     </style>
-</head>
+ </head>
 
 <body>
-    <div class="tab1">
-        <h1>Wikipedia </h1>
-        <div class="tab">
-            <input type="search" name="" id="" placeholder="search" required>
-            <input type="submit" value="search">
-
-                <div class="header">
-                <a href="form.html"target="_blank">Home</a>
-                <a href="form1.html"target="_blank">About</a>
-                <a href="form2.html"target="_blank">Services</a>
-                <a href="1.png"target="_blank">Contact</a>
-                </div>
-                
+    <div class="main">
+      <div class="header">
+        <div class="icon-name">
+           <span class="" id="brand-name">WikiPedia</span>
+           <span id="brand-tagline">25 Years of The Free Encyclopedia</span>
         </div>
-    </div>
-    <div class="h">
-        <h1>Taj Mahal</h1>
+        <div class="search-bar">
+            <input type="text" name="" class="search-bar-border-1" placeholder="search WikiPedia">
+            <input type="submit" value="search" class="search-bar-border-2">
+        </div>
+      </div>
+      <div class="content-area">
+          <div class="sidebar">
+              <div class="menu">
+                  <h4>main menu</h4>
+              </div>
+              <div class="menu-items">
+                  <a href="#">Main page</a>
+                  <a href="#">Content</a>
+                  <a href="#">Current events</a>
+             </div>
+          </div>
+          <div class="main-content">
+             <div>
+                   <h2>Taj mahal</h2>
+             </div>
+             <div>
+                 <span>Article</span>
+                 <span>Talk</span>
+             </div>
+             <div>
+                 <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam, adipisci earum ab est laboriosam sint minima iste tempora a expedita in provident ea eligendi sunt doloribus? Quibusdam dicta mollitia minus expedita quia illo, quod dolor vitae et quasi repellat earum ea delectus recusandae consectetur quos voluptate voluptatum ducimus sit vero quis. Praesentium, blanditiis quae. Numquam autem vitae ut. Ut autem optio, magni illo eos laboriosam temporibus doloremque fugiat odio! Commodi deleniti quae corrupti architecto necessitatibus dolor reiciendis laboriosam ullam tempora magnam eius accusantium, accusamus sed laudantium. Quasi, et velit sapiente placeat eius, animi a alias impedit voluptates sint tenetur provident hic, sed eligendi suscipit quisquam modi sequi delectus tempore quia. Magnam, et! Vitae consequatur aspernatur at, sequi nostrum iste. Officiis sit porro delectus, possimus officia, consectetur quasi dicta minima in quibusdam sunt amet vel qui inventore quisquam suscipit architecto? Dolore exercitationem possimus aperiam explicabo quia amet esse repellendus nemo rem illum, accusantium eos, commodi impedit debitis, at voluptatibus veritatis temporibus ad blanditiis voluptatum excepturi pariatur dicta aliquam ex! Recusandae blanditiis provident quaerat quibusdam placeat dolore tempore. Cumque, aperiam doloribus officia voluptates incidunt necessitatibus. Quaerat magnam optio recusandae, odit maxime nobis expedita sit eos similique dolorem obcaecati corporis dignissimos, ab exercitationem nemo a consequatur totam deserunt libero harum aperiam! Distinctio, quasi nam culpa fugiat, molestiae sed adipisci similique accusantium provident iusto, delectus commodi aliquid animi amet obcaecati officia quos. Ab vel minima autem earum harum adipisci cum inventore sapiente sequi commodi sit, labore, consequatur cupiditate id. Iure voluptatem asperiores molestiae, dolor cumque exercitationem doloribus, qui incidunt natus maxime repudiandae dolore alias harum reprehenderit eligendi, laudantium recusandae modi quidem itaque earum ab inventore. Blanditiis eligendi iste natus minus fuga nobis perspiciatis adipisci aut consequatur minima, vero a. Repudiandae delectus odit assumenda, quos deleniti, cupiditate odio enim nostrum quae voluptas illo ea neque praesentium tempore quis perferendis. Omnis laboriosam animi dicta commodi, magnam recusandae sequi aperiam voluptate quaerat? Ipsam molestias temporibus accusamus laudantium, facilis dolore praesentium quaerat voluptas fugit, tenetur magni eaque vero, aliquam nulla porro quis modi deserunt odio laboriosam cum? Libero deleniti vel itaque beatae ipsum sint laborum modi. Possimus sapiente nisi, eius debitis cum inventore corporis! Culpa alias laborum officiis. Iusto consequuntur est, ea id, accusamus exercitationem voluptatem, inventore maiores rem omnis sunt tempore dolorem animi? Cupiditate vero reiciendis autem dicta blanditiis, debitis aspernatur a asperiores, accusantium minima itaque accusamus nihil eaque esse! Perspiciatis at mollitia dolorem laborum facere minus tenetur. Ullam, sequi magnam cupiditate dolore corporis eveniet voluptates aperiam explicabo recusandae quam, rem a natus asperiores alias ducimus laudantium repellat omnis blanditiis, fugiat praesentium iusto. Quia ab, laboriosam, impedit maxime assumenda repudiandae totam perspiciatis, est inventore vitae nam dolores? Odit, quisquam rem. Veniam provident reiciendis, unde inventore perferendis optio. Fuga id odio suscipit illum iure voluptatibus fugiat cumque ex vitae rerum voluptate possimus nemo reiciendis omnis unde placeat repellendus molestiae repellat sit laborum temporibus, autem reprehenderit distinctio. Adipisci necessitatibus dignissimos quasi! Voluptatem, eius! Itaque at mollitia expedita tempore non voluptas laborum, neque sequi consequuntur quo illum asperiores. Impedit quae dicta quas, numquam laboriosam quia recusandae, sunt quam doloribus facilis esse error aliquid, alias blanditiis ex deserunt deleniti ab sequi. Est libero porro eveniet, quibusdam recusandae impedit aliquam incidunt a quod, facere tempora. Fugit officiis quam eius suscipit quidem, molestias minima a, iure tenetur deleniti asperiores laborum quae ratione enim. Libero corrupti, obcaecati deleniti explicabo sequi voluptas odit dolores!</p>
+                 </div>
+             </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-    <div>
-        <div>
-            sideber
-        </div>
-        <div>
-            main
-        </div>
-    </div>
-     
-    <img src="image/b.jpg" alt="">
-    <div>
-        <p>
-            From Wikipedia, the free encyclopedia
-            For other uses, see Taj Mahal (disambiguation).
-        </p>
-    </div>
-
+      
+        
 </body>
-
-</html>
+</html> 
