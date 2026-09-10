@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Cards</title>
+    <style>
+        body {
+            background: url(image/Background.jpg);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            width: 320px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 30px 24px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2b2d42;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        .card-description {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #6c757d;
+        }
+
+        .card-footer {
+            display: flex;
+            color: #ffffff;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .footer-stat {
+            flex: 1;
+            padding: 15px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .footer-stat:last-child {
+            border-right: none;
+        }
+
+        .stat-val {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            opacity: 0.9;
+            letter-spacing: 1px;
+        }
+
+        .card-pink .card-tag {
+            color: #d81b60;
+        }
+
+        .card-pink .card-footer {
+            background-color: #e91e63;
+        }
+
+        .card-orange .card-tag {
+            color: #f57c00;
+        }
+
+        .card-orange .card-footer {
+            background-color: #ff9800;
+        }
+
+        .card-green .card-tag {
+            color: #2e7d32;
+        }
+
+        .card-green .card-footer {
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 1 -->
+        <div class="card card-pink">
+            <div class="card-image">
+                <img src="image/bmw.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">BMW M5</div>
+                <h2 class="card-title">Post One</h2>
+                <p class="card-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, enim!
+                    Accusantium itaque repudiandae ex vel recusandae quos nulla alias! Alias..</p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-stat">
+                    <span class="stat-val">4k</span>
+                    <span class="stat-label">Read</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">1023</span>
+                    <span class="stat-label">Views</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">52</span>
+                    <span class="stat-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card card-orange">
+            <div class="card-image">
+                <img src="image/car.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">CHARGER R/T</div>
+                <h2 class="card-title">Post Two</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium
+                    mollitia fuga, ipsam facilis repellat neque obcaecati. Neque, minus reprehenderit? .</p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-stat">
+                    <span class="stat-val">7k</span>
+                    <span class="stat-label">Read</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">5421</span>
+                    <span class="stat-label">Views</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">112</span>
+                    <span class="stat-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card card-green">
+            <div class="card-image">
+                <img src="image/car1.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">FORD GT</div>
+                <h2 class="card-title">Post Three</h2>
+                <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aperiam
+                    officia eum iure deserunt facere id exercitationem ratione illo voluptatibus?.</p>
+            </div>
+            <div class="card-footer">
+                <div class="footer-stat">
+                    <span class="stat-val">3k</span>
+                    <span class="stat-label">Read</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">987</span>
+                    <span class="stat-label">Views</span>
+                </div>
+                <div class="footer-stat">
+                    <span class="stat-val">28</span>
+                    <span class="stat-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
