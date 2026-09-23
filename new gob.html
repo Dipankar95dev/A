@@ -1,0 +1,269 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Dosa Recipe Page</title>
+    <style>
+
+        :root {
+            --color-nutmeg: hsl(14, 45%, 36%);
+            --color-dark-raspberry: hsl(332, 51%, 25%);
+            --color-white: hsl(0, 0%, 100%);
+            --color-rose-white: hsl(330, 100%, 98%);
+            --color-eggshell: hsl(30, 54%, 90%);
+            --color-light-grey: hsl(30, 18%, 87%);
+            --color-wenge-brown: hsl(30, 10%, 34%);
+            --color-dark-charcoal: hsl(24, 5%, 18%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--color-eggshell);
+            color: var(--color-wenge-brown);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .recipe-card {
+            background-color: var(--color-white);
+            max-width: 736px;
+            width: 100%;
+            border-radius: 24px;
+            padding: 40px;
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 500px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Young Serif', serif;
+            color: var(--color-dark-charcoal);
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .prep-time-box {
+            background-color: var(--color-rose-white);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 32px;
+        }
+
+        .prep-time-box h3 {
+            color: var(--color-dark-raspberry);
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+
+        .prep-time-box ul, .ingredients-section ul {
+            list-style-type: none;
+        }
+
+        .prep-time-box li, .ingredients-section li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .prep-time-box li::before {
+            content: "•";
+            color: var(--color-dark-raspberry);
+            font-weight: bold;
+            position: absolute;
+            left: 5px;
+            font-size: 1.2rem;
+        }
+
+        .prep-time-box li strong {
+            color: var(--color-wenge-brown);
+        }
+
+        h2 {
+            font-family: 'Young Serif', serif;
+            color: var(--color-nutmeg);
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+        }
+
+        .ingredients-section li::before {
+            content: "•";
+            color: var(--color-nutmeg);
+            font-weight: bold;
+            position: absolute;
+            left: 5px;
+            font-size: 1.2rem;
+        }
+
+        .instructions-section ol {
+            list-style-type: none;
+            counter-reset: steps-counter;
+        }
+
+        .instructions-section li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+            counter-increment: steps-counter;
+        }
+
+        .instructions-section li::before {
+            content: counter(steps-counter) ".";
+            color: var(--color-nutmeg);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .instructions-section li strong {
+            color: var(--color-dark-charcoal);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--color-light-grey);
+            margin: 32px 0;
+        }
+
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .nutrition-table tr {
+            border-bottom: 1px solid var(--color-light-grey);
+        }
+
+        .nutrition-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .nutrition-table td {
+            padding: 12px 32px;
+            font-size: 1rem;
+        }
+
+        .nutrition-table td.nutrient-name {
+            color: var(--color-wenge-brown);
+        }
+
+        .nutrition-table td.nutrient-value {
+            color: var(--color-nutmeg);
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+            .recipe-card {
+                border-radius: 0;
+                padding: 24px;
+            }
+            .recipe-image {
+                border-radius: 0;
+                margin: -24px -24px 40px -24px;
+                width: calc(100% + 48px);
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-card">
+
+        <img class="recipe-image" src="image/dosa.jpg" alt="Crispy Masala Dosa">
+
+        <h1>Crispy Masala Dosa Recipe</h1>
+        <p class="description">yah dakshin bharat ka ek bahut hi lokpriya aur paramparik vyanjan hai. chawal aur udad daal ke khameer uthaye hue ghol se bane is patle aur kurkure dose mein masaledar aalu ka mishran (masala) bhara hota hai. ise aam taur par nariyal ki chatni aur swadisht sambhar ke saath garma-garam parosa jata hai.</p>
+
+        <div class="prep-time-box">
+            <h3>Preparation time</h3>
+            <ul>
+                <li><strong>Total:</strong> Approx. 30 minutes (with ready batter)</li>
+                <li><strong>Preparation:</strong> 15 minutes</li>
+                <li><strong>Cooking:</strong> 15 minutes</li>
+            </ul>
+        </div>
+
+        <div class="ingredients-section">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>3 cups fermented dosa batter</li>
+                <li>3 medium-sized boiled potatoes</li>
+                <li>1 finely chopped onion and 2 green chillies</li>
+                <li>Mustard seeds, curry leaves, and turmeric powder (for tempering)</li>
+                <li>Oil or butter (for cooking)</li>
+                <li>Salt to taste</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="instructions-section">
+            <h2>Instructions</h2>
+            <ol>
+                <li><strong>Prepare the potato stuffing:</strong> ek pan mein tel garam karen, usme rai, kari patta, hari mirch aur pyaz dalen. pyaz ke pardarshi hone tak bhunen, phir haldi, mash kiye hue aalu aur namak daalkar acchi tarah milayen aur 3-4 minute tak pakaen.</li>
+                <li><strong>Heat the griddle:</strong> madhyam aanch par ek non-stic dosa tawa garam karen. taapmaan jaanchne ke liye pani ki kuch bunden chhidaken aur ise saaf kapde se ponchh len..</li>
+                <li><strong>Spread the batter:</strong> tave ke beech mein ek kalchi bhar ghol dalen. kalchi ke pichle hisse ka istemaal karte hue, ghol ko dhire-dhire gol ghumate hue bahar ki taraf failayen taki ek patla dosa ya crape ban jaye.</li>
+                <li><strong>Cook until crispy:</strong> kinaron aur beech mein thoda tel ya makkhan dalen. tab tak pakayen jab tak nichli parat sunhari bhuri aur kurkuri na ho jaye</li>
+                <li><strong>Add the stuffing:</strong> taiyar aalu masala ka ek hissa dosa ke beech mein rakhen.</li>
+                <li><strong>Fold and serve:</strong> dose ke sathiyon ko stuffing ke upar mascara roll bana len. ise tave se shuru karen aur garma- garam sambhar aur lalach ke saath turant shuru karen.</li>
+            </ol>
+        </div>
+
+        <hr>
+
+        <div class="nutrition-section">
+            <h2>Nutrition</h2>
+            <p>neeche di gai table mein bina atirikt makkhan ya chatni wale ek standard masala dosa ki nutritional value (poshak tatv) dikhai gai han.:</p>
+            <table class="nutrition-table">
+                <tr>
+                    <td class="nutrient-name">Calories</td>
+                    <td class="nutrient-value">287 kcal</td>
+                </tr>
+                <tr>
+                    <td class="nutrient-name">Carbs</td>
+                    <td class="nutrient-value">44g</td>
+                </tr>
+                <tr>
+                    <td class="nutrient-name">Protein</td>
+                    <td class="nutrient-value">6g</td>
+                </tr>
+                <tr>
+                    <td class="nutrient-name">Fat</td>
+                    <td class="nutrient-value">9g</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
