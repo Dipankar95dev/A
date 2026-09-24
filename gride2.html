@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leveled-Up Grid Design</title>
+    <style>
+        .body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 1. Setup the container size and shape */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            /* 3 vertical columns */
+            grid-template-rows: 150px 150px;
+            /* 2 rows, each 150px tall */
+            gap: 8px;
+            /* Clean gaps instead of touching lines */
+            width: 500px;
+            font-family: sans-serif;
+        }
+
+        /* 2. Center the text inside every box */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 6px;
+            /* Slightly softens the sharp corners */
+        }
+
+        /* 3. Position the boxes and add softer solid colors */
+        .box-lime {
+            grid-row: 1 / span 2;
+            /* Spans top to bottom */
+            background-color: #a3e635;
+            /* Softer lime green */
+            color: #1a3a05;
+        }
+
+        .box-slate {
+            grid-row: 1 / span 2;
+            /* Spans top to bottom */
+            background-color: #475569;
+            /* Balanced slate gray */
+            color: white;
+        }
+
+        .box-green {
+            background-color: #15803d;
+            /* Rich forest green */
+            color: white;
+        }
+
+        .box-red {
+            background-color: #b91c1c;
+            /* Soft brick red */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="grid-container">
+            <div class="box box-lime">Hello</div>
+            <div class="box box-slate">hi</div>
+            <div class="box box-green">hi</div>
+            <div class="box box-red">hello</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
