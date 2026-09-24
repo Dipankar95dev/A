@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+</head>
+<style>
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        min-height: auto;
+        background: red;
+    }
+
+    .room {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .card-content{
+        padding: 30px 25px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .card-tag{
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .card-title{
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: blue;
+        margin-bottom: 15px;
+        font-family: Georgia,  serif;
+    }
+
+    .p-room{
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: rgb(230, 15, 201);
+    }
+
+    .card-star{
+        display: flex;
+        font-size: 0.9rem;
+        text-align: center;
+        color: blueviolet;
+    }
+
+    .room-star{
+        flex: 1;
+        padding: 15px 10px;
+        display: flex;
+        gap: 4px;
+        border-right: 1px solid gold;
+        flex-direction: column;
+    }
+
+    .star-tag{
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+
+    .star-label{
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        opacity: 0.9;
+        letter-spacing: 1px;
+    }
+
+    .room-box .card-tag{
+        color: darkred;
+    }
+
+    .room-box .card-star{
+        background-color: coral;
+    }
+
+    .room-box .card-tag{
+        color: cornflowerblue;
+    }
+
+    .room-box1 .card-star{
+        background: yellowgreen;
+    }
+
+    .room-box2 .card-tag{
+        color: darkslateblue;
+
+    }
+
+    .room-box2 .card-star{
+        background: violet;
+    }
+</style>
+
+<body>
+    <div class="room">
+
+        <div class="room-box">
+            <div class="card-image">
+                <img src="image/bmw.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">move</div>
+                <h1 class="card-title">Post one</h1>
+                <p class="p-room">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, similique? Veritatis cum debitis
+                    dolorum accusantium rerum dicta quis molestiae ullam.</p>
+            </div>
+            <div class="card-box1">
+                <div class="room-star">
+                    <span class="star-tag">10M</span>
+                    <span class="star-label">Read</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">100K</span>
+                    <span class="star-label">Views</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">135</span>
+                    <span class="star-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="room-box2">
+            <div class="card-image">
+                <img src="image/bmw.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">move</div>
+                <h1 class="card-title">Post one</h1>
+                <p class="p-room">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, similique? Veritatis cum debitis
+                    dolorum accusantium rerum dicta quis molestiae ullam.</p>
+            </div>
+            <div class="card-star">
+                <div class="room-star">
+                    <span class="star-tag">10M</span>
+                    <span class="star-label">Read</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">100K</span>
+                    <span class="star-label">Views</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">135</span>
+                    <span class="star-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="room-box">
+            <div class="card-image">
+                <img src="image/bmw.jpg" alt="Post">
+            </div>
+            <div class="card-content">
+                <div class="card-tag">move</div>
+                <h1 class="card-title">Post one</h1>
+                <p class="p-room">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, similique? Veritatis cum debitis
+                    dolorum accusantium rerum dicta quis molestiae ullam.</p>
+            </div>
+            <div class="card-star">
+                <div class="room-star">
+                    <span class="star-tag">10M</span>
+                    <span class="star-label">Read</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">100K</span>
+                    <span class="star-label">Views</span>
+                </div>
+                <div class="room-star">
+                    <span class="star-tag">135</span>
+                    <span class="star-label">Comments</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
