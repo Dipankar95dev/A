@@ -8,7 +8,7 @@
     <style>
     
         body {
-            background-color: rgb(8, 235, 243);
+            background-color: antiquewhite;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,19 +16,25 @@
             margin: 0;
         }
         .modern-card {
-            background: rgb(142, 8, 199);
+            background-color: rgb(148, 11, 217);
             color:rgb(179, 230, 12) ;
             padding: 25px;
             border-radius: 16px;
             width: 200px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: bold;
         }
         .modern-card:hover {
+             background-image: linear-gradient(red,green);
             transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            background-color: rgb(30, 90, 202);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);           
             color:rgb(236, 124, 11) ;
+            font-size: 32px;
+        
+        }
+        .h{
+            text-decoration: underline;
         }
         
     </style>
@@ -36,7 +42,7 @@
 
 <body>
     <div class="modern-card">
-        <h3>Modern Card</h3>
+        <h3 class="h">Modern Card</h3>
         <p>Hover over this card to see a smooth elevation and shadow transition.</p>
     </div>
 </body>
